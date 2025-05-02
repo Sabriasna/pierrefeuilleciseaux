@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: limegreen;
+  font-family: 'Silkscreen', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid limegreen;
+  color: limegreen;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.resultats {
+  margin-top: 30px;
+}
