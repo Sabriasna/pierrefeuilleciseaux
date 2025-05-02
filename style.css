@@ -26,3 +26,19 @@ button:hover {
 .infos {
   margin-top: 30px;
 }
+
+progress {
+  width: 50%;
+  height: 20px;
+  margin-top: 20px;
+  background-color: black;
+  border: 1px solid limegreen;
+}
+
+progress::-webkit-progress-bar {
+  background-color: black;
+}
+
+progress::-webkit-progress-value {
+  background-color: limegreen;
+}

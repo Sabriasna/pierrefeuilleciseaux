@@ -7,13 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<audio id="musique" src="retro.mp3" autoplay loop></audio>
+
   <h1>Pierre - Feuille - Ciseaux</h1>
 
-  <div class="choices">
-    <button onclick="jouer('pierre')">Pierre</button>
-    <button onclick="jouer('feuille')">Feuille</button>
-    <button onclick="jouer('ciseaux')">Ciseaux</button>
-  </div>
+<div class="choices">
+  <button onclick="jouer('pierre')">Pierre</button>
+  <button onclick="jouer('feuille')">Feuille</button>
+  <button onclick="jouer('ciseaux')">Ciseaux</button>
+  <button onclick="stopInfini()" id="stop" style="display:none;">Arrêter</button>
+</div>
 
   <div class="infos">
     <p id="manche">Manche : 1 / 3</p>
@@ -21,7 +24,11 @@
     <p id="choix"></p>
     <p id="score">Score : Toi 0 - 0 Ordi</p>
     <p id="fin"></p>
-  </div>
+    <button id="rejouer" onclick="reinitialiser()" style="display:none;">Rejouer</button>
+    
+<div class="progression">
+  <progress id="barre" value="1" max="100"></progress>
+</div>
 
   <script src="script.js"></script>
 </body>
